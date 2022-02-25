@@ -54,8 +54,8 @@ async def start(bot: Amime, union: Union[CallbackQuery, Message]):
                         (lang.language_button, "language"),
                     ],
                     [
-                        (lang.anime_button, "anime_req"),
-                        (lang.manga_button, "manga_req"),
+                        (lang.anime_button, "anime"),
+                        (lang.manga_button, "manga"),
                     ],
                     [
                         (lang.how_to_use_button, "how_to_use"),
