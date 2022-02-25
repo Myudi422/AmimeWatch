@@ -31,7 +31,7 @@ from pyromod.helpers import ikb
 from amime.amime import Amime
 
 
-@Amime.on_message(filters.cmd(r"characters (.+)"))
+@Amime.on_message(filters.cmd(r"character (.+)"))
 @Amime.on_callback_query(filters.regex(r"^character (\d+)\s?(\d+)?\s?(\d+)?"))
 async def character_view(bot: Amime, union: Union[CallbackQuery, Message]):
     is_callback = isinstance(union, CallbackQuery)
