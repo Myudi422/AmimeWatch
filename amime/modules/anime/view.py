@@ -150,7 +150,7 @@ async def anime_view(bot: Amime, union: Union[CallbackQuery, Message]):
                 buttons.append(
                     (
                         lang.watch_button,
-                        f"https://t.me/{bot.me.username}/?start=anime_{anime.id}",
+                        f"https://t.me/{bot.me.username}/?start=anime_req_{anime.id}",
                         "url",
                     )
                 )
@@ -309,7 +309,7 @@ async def anime_view_characters(bot: Amime, callback: CallbackQuery):
         return
 
     async with anilist.AsyncClient() as client:
-        anime = await client.get(anime_id, "anime")
+        anime = await client.get(anime_id, "anime_req")
 
         keyboard = [
             [
