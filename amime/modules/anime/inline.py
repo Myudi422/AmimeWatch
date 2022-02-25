@@ -101,7 +101,7 @@ async def anime_inline(bot: Amime, inline_query: InlineQuery):
                 [
                     (
                         lang.view_more_button,
-                        f"https://t.me/{bot.me.username}/?start=anime_req_{anime.id}",
+                        f"https://t.me/{bot.me.username}/?start=anime_{anime.id}",
                         "url",
                     )
                 ],
