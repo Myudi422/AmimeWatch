@@ -2,7 +2,7 @@ from typing import Dict, List
 
 
 GROUPS: Dict = {
-    "en": 0,
+    "en": -1001559315851,
     "pt": 0,
 }
 CHANNELS: Dict = {
@@ -10,9 +10,9 @@ CHANNELS: Dict = {
     "pt": 0,
 }
 CHATS: Dict = {
-    "backup": 0,
-    "requests": 0,
-    "videos": 0,
+    "backup": -1001559315851,
+    "requests": -1001559315851,
+    "videos": -1001559315851,
     "staff": 0,
 }
 SUDO_USERS: List[int] = [1765145725, 918317361, 705707638]  # @AndrielFR, @Hitalo and @VegaZS
